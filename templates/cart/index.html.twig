@@ -2,6 +2,10 @@
 
 {% block title %}Panier ORIGINEED{% endblock %}
 
+
+
+
+
 {% block body %}
 <div class="container">
 {% if cart|length > 0 %}
@@ -17,7 +21,6 @@
   </thead>
   <tbody>
   {% for productOrder in cart %}
-  {% dump productOrder %}
     <tr>
       <th scope="row">{{ productOrder.product.id }}</th>
       <td>{{ productOrder.product.title }}</td>
@@ -31,9 +34,10 @@
 
     </tr>
     {% endfor %}
+    </tbody>
 </table>
 {% else %}
-<h2 class="error">Votre panier est vide</h2>
+<h2 class="text-danger"> Votre panier est vide</h2>
 {% endif %}
 </div>
-{% endblock %}
+{%  endblock %}
