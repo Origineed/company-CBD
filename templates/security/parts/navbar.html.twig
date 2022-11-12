@@ -1,0 +1,29 @@
+ {% extends 'base.html.twig' %}
+ 
+ {% block stylesheet %}
+{{ encore_entry_link_tags('app') }}
+     <link rel="stylesheet" href="{{ asset('css/products.css') }}">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+{% endblock %}
+ {% block body %}
+
+ <div class="nav-products">
+                <ul class="nav-position">
+                <li>
+                <img class="origineed-product" src="../pictures/71D5893B82119AB3.png">
+                </li>
+                <li><img src="../pictures/search.svg" class="search-icon"></li>
+                   {% if app.user %}
+            <li><a href="{{ path('app_logout') }}" class="icon-link" ><img src="../pictures/icon-connect.svg" alt"" class="connect-icon"></a></li>
+            {% else %}
+            <li><a href="{{ path('app_login') }}" class="icon-link" ><img src="../pictures/icon-connect.svg" alt"" class="connect-icon"></a></li>
+            {% endif %}
+                <li><img src="../pictures/shop.svg" class="shop-icon"></li>
+                <li class="text"><p class="price"> 0,00€ </p>
+                <p class="number-articles"> 0Article</p></li>
+                </ul>
+            </div>
+            {% endblock %}

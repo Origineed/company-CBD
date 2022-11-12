@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+
+{% block stylesheets %}
+ {{ encore_entry_link_tags('app') }}
+    <link rel="stylesheet" href="{{ asset('css/login.css') }}">
+
+{% endblock %}
+
+{% block javascripts %}
+{% endblock %}
+
+{% block body %}
+<form method="post">
+    {% if error %}
+        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    {% if app.user %}
+        <div class="mb-3">
+            You are logged in as {{ app.user.userIdentifier }}, <a href="{{ path('app_logout') }}">Logout</a>
+        </div>
+    {% endif %}
+    <body class="back-login">
+    
+     <div class="nav-products-login">
+               <ul class="nav-position">
+               <li>
+                <img class="origineed-product" src="../pictures/71D5893B82119AB3.png">
+                </li>
+                <li><img src="../pictures/search.svg" class="search-icon"></li>
+                <li><img src="../pictures/icon-connect.svg" class="connect-icon"></li>
+                <li><img src="../pictures/shop.svg" class="shop-icon"></li>
+                <li class="text"><p class="price"> 0,00€ </p>
+                <p class="number-articles"> 0Article</p></li>
+                </ul>
+            </div>
+    <div class="content">
+    <img src="../pictures/blur-login.svg" class="blur-login">
+    <img src="../pictures/blur-login2.svg" class="blur-login2">
+
+    <h1 class="connect">Connectez-vous à votre compte</h1>
+    <div class="trait"></div>
+    <div class="content-input-email">
+        {#<div class="triangle"></div>#}
+
+        <img class="tri-back" src="../pictures/tt.png">
+        <h4 class="typo-mail">E-mail</div>
+        <form>
+            <label for="inputEmail">Email</label>
+            <input class="email1 typo " type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" autocomplete="email" required autofocus></input>
+            <h4 class="typo-password">Mot de passe</div>
+            <label for="inputPassword">Password</label>
+            <input type="password" name="password" id="inputPassword" class="form-control typo password1 " autocomplete="current-password" required>
+            <input type="hidden" name="_csrf_token"
+            value="{{ csrf_token('authenticate') }}">
+    <input type="hidden" name="_csrf_token"
+           value="{{ csrf_token('authenticate') }}"
+    >
+            <button class="btn btn-lg btn-primary button-login typo-sign-in" type="submit">
+        S'identifier
+    </button>
+    <a class="remember-me" href="{{ path('app_register') }}">Créer<br> mon <br>compte</a>
+            </form>
+    </div>
+    </body>
+
+{#
+        Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+        See https://symfony.com/doc/current/security/remember_me.html
+
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" name="_remember_me"> Remember me
+            </label>
+        </div>
+    
+    
+
+
+
+    <button class="btn btn-lg btn-primary" type="submit">
+        Sign in
+    </button>
+</form>#}
+
+{% endblock %}

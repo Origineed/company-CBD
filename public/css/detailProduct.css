@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gilda+Display&family=Grandstander:wght@100&family=Gruppo&family=Herr+Von+Muellerhoff&family=Jost:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@700&display=swap");
+
+.back {
+    background-color: black;
+    color: #000000;
+  }
+  .product-detail-card {
+    box-shadow: 0px 8px 28px -7px rgba(0, 0, 0, 0.568);
+    overflow: hidden;
+    position: relative;
+    width: 1250px;
+    height: 550px;
+    border-radius: 2px;
+    /*background: linear-gradient(148.63deg, #0A0909 57.67%, #08242D 134.5%);*/
+    background: linear-gradient(157.99deg, #000000 37.02%, #08242d 105.1%);
+    margin-top: 190px;
+    margin-left: 5%;
+  }
+  @import "https://fonts.googleapis.com/css?family=Reem+Kufi";
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.detail-image-art1 {
+  width: 90%;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  margin-left: -20%;
+}
+
+.wave {
+  position: absolute;
+  height: 2450px;
+  width: 2650px;
+  opacity: 0.6;
+  left: 80%;
+  top:50px;
+  margin-left: -72%;
+  margin-top: 12px;
+  background: radial-gradient(#467283, #020202a9);
+  /*background: radial-gradient(#467283, #020202);*/
+}
+.detail-button-article {
+  width: 196px;
+  height: 45px;
+  margin-left: -68px;
+  margin-top: 44px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+  font-family: Grandstander, serif;
+  font-size: 13px;
+  position: absolute;
+  z-index: 99;
+}
+.detail-icons-star {
+  width: 100%;
+}
+.detail-triangle-icon {
+  position: absolute;
+  width: 40px;
+  margin-top: 50px;
+  margin-left: 530px;
+}
+.detail-content-star {
+  width: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+
+.detail-price-article {
+  font-family: "Genos", sans-serif;
+  font-size: 38px;
+  margin-top: -8px;
+  color: white;
+  position: absolute;
+  text-shadow: rgba(0, 0, 0, 0.404) 2px 5px 2px;
+}
+.detail-title-article {
+  font-family: Gilda Display, serif;
+  color: rgb(4, 4, 4);
+  margin-left: 222px;
+  margin-top: 32px;
+  opacity: 75%;
+  font-size: 59px;
+}
+
+.detail-description-article {
+  font-family: Gruppo, serif;
+  font-size: 19px;
+  color: white;
+  margin-top: 50px;
+  margin-left: -80px;
+  line-height: 20px;
+  opacity: 75%;
+  width: 90%;
+  
+
+}
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 10px;
+}
+
+/* when stop */
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+/* when stop */
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+/* when stop */
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+
+.detail-blur-login {
+    filter: blur(140px);
+    position:fixed;
+    bottom:-110px;
+   left:50px;
+   width: 100%;
+   z-index: -1;
+   opacity: 60%;
+}
+.detail-blur-login2 {
+    filter: blur(120px);
+    position:fixed;
+    bottom:-300px;
+   left:150px;
+   width: 100%;
+   opacity: 30%;
+   z-index: 2;
+   opacity: 60%;
+}
+.little-detail-title {
+    position: absolute;
+    color: white;
+    font-family: Gilda Display, serif;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-left: -80px;
+
+}
+.choiceQuantity {
+    position: absolute;
+    padding-left: 8px;
+    padding-right: 3px;
+    height: 37px;
+    z-index: 99;
+    border-radius: 10px;
+    background-color: transparent;
+    font-family: Gruppo, serif;
+    font-size: 21px;
+    margin-left: -140px;
+    color: white;
+}
+

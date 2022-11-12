@@ -1,0 +1,259 @@
+.back-login {
+    background-color: black;
+}
+.blur-login {
+    filter: blur(140px);
+    position:fixed;
+    bottom:-110px;
+   left:50px;
+   width: 100%;
+   z-index: -1;
+}
+.blur-login2 {
+    filter: blur(120px);
+    position:fixed;
+    bottom:-300px;
+   left:-600px;
+   width: 100%;
+   opacity: 30%;
+   z-index: 2;
+}
+
+ .tri-back { position: absolute;
+    z-index: 99;
+    width: 40%;
+    margin-top: 250px;
+    margin-left: 30%;
+ }
+
+ .email1 {
+
+box-sizing: border-box;
+
+position: absolute;
+width: 23%;
+height: 50px;
+left: 39.1%;
+top: 34.5%;
+z-index: 101;
+background:linear-gradient( rgba(7, 7, 7, 0.07) 16.6%, rgba(0, 0, 0, 0.07) 89.08%);
+box-shadow: inset 0px -21px 27px rgba(0, 0, 0, 0.36);
+border-radius: 130px ;
+border-image-slice: 0.5; 
+border-color: rgba(90, 122, 129, 0.591) transparent transparent transparent;
+ }
+ 
+ .typo {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    padding-left: 20px;
+    font-size: 18px;
+ }
+.typo-mail {
+    position: absolute;
+    margin-top: 306px;
+    margin-left:48.2%;
+    font-family: 'Gruppo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 12px;
+color: white;
+text-shadow: 0px -10px 5px #000000;
+z-index: 99;
+opacity: 80%;
+}
+.typo-password {
+    position: absolute;
+    margin-top: 399px;
+    margin-left:45.2%;
+    font-family: 'Gruppo';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 12px;
+color: white;
+text-shadow: 0px -10px 5px #000000;
+z-index: 99;
+opacity: 80%;
+}
+.password1 {
+    position: absolute;
+    margin-top: 425px;
+    margin-left:38.3%;
+    width: 13.7%;
+height: 45px;
+
+    z-index: 101;
+background:linear-gradient( rgba(7, 7, 7, 0.07) 16.6%, rgba(0, 0, 0, 0.07) 89.08%);
+box-shadow: inset 0px -21px 27px rgba(0, 0, 0, 0.36);
+border-radius: 130px ;
+border-image-slice: 0.5; 
+border-color: rgba(112, 153, 162, 0.329) transparent transparent transparent;
+}
+.connect {
+    position: absolute;
+    width: 950px;
+height: 56px;
+left: 19%;
+top: 130px;
+
+font-family: 'Gruppo';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 12px;
+/* or 40% */
+
+text-align: center;
+letter-spacing: 8.25714px;
+
+color: #FFFFFF;
+}
+.trait {
+    position: absolute;
+width: 536px;
+height: 0px;
+left: 32.7%;
+top: 208px;
+
+border: 1px solid #FFFFFF;
+transform: rotate(0.19deg);
+}
+.nav-products-login {
+    box-sizing: border-box;
+position: absolute;
+width: 5%;
+height: 374px;
+left: 2.4%;
+top: 404px;
+
+}
+.button-login {
+    z-index: 100;
+    box-sizing: border-box;
+
+position: absolute;
+width: 9%;
+height: 48px;
+left: 46%;
+top: 552px;
+
+background:linear-gradient( rgba(7, 7, 7, 0.07) 16.6%, rgba(0, 0, 0, 0.07) 89.08%);
+box-shadow: inset 0px -21px 27px rgba(0, 0, 0, 0.36);
+border-radius: 130px ;
+border-image-slice: 0.5; 
+border-color: rgba(112, 153, 162, 0.108) transparent transparent transparent;
+
+}
+.typo-sign-in {
+    font-family: 'Gruppo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 12px;
+    color: white;
+}
+.nav-position {
+    list-style: none;
+    margin-left: -1px;
+    margin-top: -100px;
+   
+    
+  }
+  .origineed-product {
+    margin-bottom: 20px;
+    width: 100px; 
+    margin-left: -40px;
+ }
+ .search-icon {
+    width: 27px;
+    margin-bottom: 28px;
+  }
+  .connect-icon {
+    width: 33px;
+    margin-bottom: 28px;
+  }
+  .shop-icon {
+    width: 33px;
+    margin-bottom: 28px;
+  }
+  .price {
+    font-family: Jost, serif;
+    font-size: 13px;
+    color: white;
+  }
+  .number-articles {
+    font-family: Jost, serif;
+    font-size: 12px;
+    color: white;
+    opacity: 70%;
+  }
+  .remember-me {
+    position: absolute;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    margin-top: 37%;
+    margin-left: 44.6%;
+    z-index: 300;
+    text-decoration: none;
+    font-size: 16px;
+    text-align: center;
+    opacity: 80%;
+    text-shadow: 0px -10px 5px #00000066;
+  }
+  .register {
+z-index:102;
+font-family: 'Gruppo';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height: 12px;
+color: white;
+text-align: center;
+margin-top: 200px;
+  }
+  .register-login {
+text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    width: 300px;
+    z-index: 101;
+    background:linear-gradient( rgba(7, 7, 7, 0.07) 16.6%, rgba(0, 0, 0, 0.267) 89.08%);
+    box-shadow: inset 0px -21px 27px rgba(0, 0, 0, 0.23);
+    border-radius: 130px ;
+    border-image-slice: 0.5; 
+    border-color: rgba(90, 122, 129, 0.591) transparent transparent transparent;
+     }
+     .typo-form-register {
+      font-family: 'Gruppo';
+    
+      
+     }
+     .form-center {
+      text-align: center;
+      color: white;
+      opacity: 90%;
+     }
+     .container-register {
+      display: flex;
+      justify-items: center;
+      width: 300px;
+      margin-left:  -50px;
+      margin-top: 70px;
+     }
+   .space-bottom {
+    margin-bottom: 20px;
+   }
+    .buttons {
+      width: 146px;
+      height: 55px;
+      border: 1px solid #ffffff;
+      background-color: transparent;
+      color: white;
+      text-align: center;
+      font-family: Grandstander, serif;
+      font-size: 15px;
+      margin-top: 20px;
+    }
+

@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Grandstander:wght@100&family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gilda+Display&family=Grandstander:wght@100&family=Gruppo&family=Herr+Von+Muellerhoff&family=Jost:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
+
+.products-back {
+  background-color: #000;
+}
+.blur-products {
+  filter: blur(160px);
+  opacity: 87%;
+  height: 100%;
+}
+.container-products {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 97.5%;
+  height: 130%;
+  left: 1.25%;
+  top: 57px;
+  background: linear-gradient(
+    89.78deg,
+    rgba(7, 7, 7, 0.07) 6.6%,
+    rgba(0, 0, 0, 0.07) 89.08%
+  );
+  box-shadow: inset 0px 11px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 257px;
+}
+.content-page {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 80%;
+  height: 90%;
+  left: 10%;
+  top: 29px;
+  overflow: hidden;
+
+  background: linear-gradient(
+    89.78deg,
+    rgba(7, 7, 7, 0.07) 6.6%,
+    rgba(0, 0, 0, 0.07) 89.08%
+  );
+  box-shadow: inset 0px 15px 27px rgba(0, 0, 0, 0.25);
+  border-radius: 257px;
+}
+.container-cards {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 95%;
+  height: 68%;
+  left: 2.5%;
+  top: 153px;
+  background: linear-gradient(
+    89.78deg,
+    rgba(7, 7, 7, 0.07) 6.6%,
+    rgba(0, 0, 0, 0.07) 89.08%
+  );
+  box-shadow: inset 0px 21px 27px rgba(0, 0, 0, 0.41);
+  border-radius: 130px
+}
+.scroll {
+    overflow-y: scroll;
+  scrollbar-color: rgb(12, 0, 25) green;
+  scrollbar-width: thin;
+}
+.nav-bar {
+    position: absolute;
+    top: 1.9%;
+    left: 46.9%;
+    width: 10%;
+    z-index: 200;
+    opacity: 90%;
+}
+.nav-products {
+    box-sizing: border-box;
+
+position: absolute;
+width: 5%;
+height: 374px;
+left: 2.4%;
+top: 364px;
+
+background: linear-gradient(89.78deg, rgba(7, 7, 7, 0.07) 6.6%, rgba(0, 0, 0, 0.07) 89.08%);
+box-shadow: 0px 11px 27px rgba(0, 0, 0, 0.68);
+}
+.nav-position {
+    list-style: none;
+    margin-left: -4px;
+    
+  }
+  .search-icon {
+    width: 27px;
+    margin-top: 50px;
+    margin-bottom: 28px;
+    margin-left: -1.8%;
+  }
+  .connect-icon {
+    width: 33px;
+    margin-bottom: 28px;
+    margin-left: -1.8%;
+  }
+  .shop-icon {
+    width: 33px;
+    margin-bottom: 28px;
+    margin-left: -1.8%;
+  }
+  .price {
+    font-family: Jost, serif;
+    font-size: 13px;
+    color: white;
+  }
+  .text {
+    width: 40px;
+    text-align: center;
+    line-height: 0.1em;
+    margin-left: -5px;
+  }
+  .number-articles {
+    font-family: Jost, serif;
+    font-size: 12px;
+    color: white;
+    opacity: 70%;
+  }
+  @import 'https://fonts.googleapis.com/css?family=Reem+Kufi';
+
+
+
+
+@keyframes wave {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.music-card-products {
+  box-shadow: 0px 8px 28px -7px rgba(0, 0, 0, 0.568);
+  overflow: hidden;
+  position: relative;
+  width: 300px;
+  height: 550px;
+  border-radius: 2px;
+  /*background: linear-gradient(148.63deg, #0A0909 57.67%, #08242D 134.5%);*/
+  background: linear-gradient(157.99deg, #000000 37.02%, #08242D 105.1%);
+  margin-top: 50px;
+  margin-left: -5%;
+}
+.image-art {
+    width: 83%;
+    margin-top: 40px;
+    margin-left: -1px;
+}
+.image-art1 {
+    width: 65%;
+    margin-top: 35px;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+.image-art3 {
+    width: 50%;
+    margin-top: 44px;
+    margin-left: 35px;
+}
+.image-art4 {
+    width: 113%;
+    margin-top: 78px;
+    margin-left: -40px;
+    margin-bottom: 12px;
+}
+.image-art5 {
+    width: 123%;
+    margin-top: 8px;
+    margin-left: -60px;
+}
+.image-art6 {
+    width: 103%;
+    margin-top: 8px;
+    margin-left: -25px;
+    margin-bottom: -20px;
+}
+.wave {
+  position: absolute;
+  height: 750px;
+  width: 750px;
+  opacity: 0.6;
+  left: 0;
+  top: 0;
+  margin-left: -72%;
+  margin-top: 135%;
+  background: radial-gradient(#467283, #020202a9);
+  /*background: radial-gradient(#467283, #020202);*/
+}
+.button-article {
+    width: 106px;
+    height: 45px;
+    margin-left: 98px;
+    margin-top: 44px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-family: Grandstander, serif;
+    font-size: 13px;
+    position: absolute;
+    
+    
+  }
+  .icons-star {
+      width: 80%;
+  }
+  .triangle-icon {
+position: absolute;
+width: 8%;
+margin-top: 85px;
+margin-left: 260px;
+
+  }
+  .content-star {
+      width: 20px;
+      margin-top: 10px;
+      margin-left: 20px;
+  }
+  .content-card {
+      margin-left: 45px;
+      margin-top: 180px;
+      
+  }
+  
+  .price-article {
+    font-family: "Genos", sans-serif;
+    font-size: 38px;
+    margin-left: 90px;
+    margin-top: -13px;
+    color: white;
+    position: absolute;
+  }
+  .title-article {
+    font-family: Gilda Display, serif;
+
+    color: white;
+    margin-left: 42px;
+    margin-top: 17px;
+    opacity: 75%;
+    font-size: 36px;
+  }
+  .title-article2 {
+    font-family: Gilda Display, serif;
+
+    color: white;
+    margin-left: 42px;
+    margin-top: -29px;
+    opacity: 75%;
+    font-size: 36px;
+  }
+  .description-article {
+      width: 220px;
+    font-family: Gruppo, serif;
+    font-size: 15px;
+    color: white;
+    margin-left: 40px;
+    line-height: 20px;
+    opacity: 75%;
+    text-align: center;
+  }
+
+.wave:nth-child(2),
+.wave:nth-child(3) {
+  top: 10px;
+}
+
+
+/* when stop */
+.wave {
+  border-radius: 40%;
+  animation: wave 55s infinite linear;
+}
+
+/* when stop */
+.wave:nth-child(2) {
+  animation-duration: 50s;
+}
+
+
+/* when stop */
+.wave:nth-child(3) {
+  animation-duration: 45s;
+}
+.nav-content{
+    box-sizing: border-box;
+
+position: absolute;
+width: 78%;
+height: 63px;
+left: 11%;
+top: 37px;
+/*
+background: linear-gradient(89.78deg, rgba(7, 7, 7, 0.07) 6.6%, rgba(0, 0, 0, 0.07) 89.08%);
+box-shadow: inset 0px 11px 27px rgba(0, 0, 0, 0.414);
+border-radius: 0px; */
+
+}
+.position-nav {
+    display: flex;
+    justify-content: space-around;
+}
+.typo-nav {
+    font-family: Gruppo, serif;
+    color: #ffffff !important;
+    font-size: 18px !important;
+}
+.car {
+    -webkit-box-shadow:  15px 15px 27px #0c3842, -15px -15px 27px #082f38;
+    box-shadow:  8px -8px 26px #06151dc3,
+             -1px 3px 25px #184f6d89;         
+    border-radius: 20px;
+}
+.car2 {
+    -webkit-box-shadow:  15px 15px 27px #0c3842, -15px -15px 27px #082f38;
+    box-shadow:  6px -8px 26px #06151ddf,
+             -5px 3px 22px #123a50c1;  
+    border-radius: 20px;
+}
+.car3 {
+    -webkit-box-shadow:  15px 15px 27px #0c3842, -15px -15px 27px #082f38;
+    box-shadow:  6px -8px 16px #050e14a0,
+             0px 6px 20px #0e2e3f7c;         
+    border-radius: 20px;
+}
+.car4 {
+    -webkit-box-shadow:  15px 15px 27px #0c3842, -15px -15px 27px #082f38;
+    box-shadow:  -4px -8px 13px #06151e,
+             6px 8px 16px #0a212deb;
+
+    
+
+    border-radius: 20px;
+}
+.foot-position2 {
+   margin-top: 980px;
+   
+}
+.origineed-product {
+   width: 150%; 
+   margin-left: -28px;
+   margin-bottom: -25px;
+   margin-top: 10px;
+}
+
+
+

@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Panier ORIGINEED{% endblock %}
+
+{% block body %}
+<div class="container">
+{% if cart|length > 0 %}
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Produit</th>
+      <th scope="col">Quantité</th>
+      <th scope="col">Prix unitaire</th>
+       <th scope="col">Prix total</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for productOrder in cart %}
+  {% dump productOrder %}
+    <tr>
+      <th scope="row">{{ productOrder.product.id }}</th>
+      <td>{{ productOrder.product.title }}</td>
+      <td>{{ productOrder.quantityInCart }}</td>
+      <td>{{ productOrder.product.price }}</td>
+      <td>{{ productOrder.product.price * productOrder.quantityInCart }}</td>
+            <td>
+            <a href="{{ path('cart_remove_product', {'id': productOrder.product.id})}}">Supprimer du panier</a>
+            <a href="{{ path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'more'}) }}">+</a>
+            <a href="{{ path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'less'}) }}">-</a></td>
+
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<h2 class="error">Votre panier est vide</h2>
+{% endif %}
+</div>
+{% endblock %}
