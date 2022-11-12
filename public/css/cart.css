@@ -3,10 +3,15 @@
     color: #000000;
   }
   .dimention-content-cart {
+
+      overflow: hidden;
 height: 250px;
-overflow: hidden;
-  }
-  .place-picture{
+background: linear-gradient(157.99deg, #0000006f 37.02%, #08242d 105.1%);
+}
+.place-picture{
     margin-top: -100px;
     margin-left: 10%;
-  }
+}
+.cart-whith{
+    color: white;
+}
