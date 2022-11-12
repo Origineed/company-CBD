@@ -2,3 +2,11 @@
     background-color: black;
     color: #000000;
   }
+  .dimention-content-cart {
+height: 250px;
+overflow: hidden;
+  }
+  .place-picture{
+    margin-top: -100px;
+    margin-left: 10%;
+  }
