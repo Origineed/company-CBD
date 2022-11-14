@@ -13,54 +13,66 @@
 
 {% block body %}
 <body class="back">
-{% if cart|length > 0 %}
-<div class="container-fluid">
-
-{#<table class="table">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">Produit</th>
-      <th scope="col">Quantité</th>
-      <th scope="col">Prix unitaire</th>
-       <th scope="col">Prix total</th>
-    </tr>
-  </thead>
-  <tbody>#}
-  {% for productOrder in cart %}
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-12 dimention-content-cart">
-            <div class"dimention-content-cart">
-            <div class="row">
-            <div class="col-4">
-                <img src="{{ productOrder.product.picture }}" class="place-picture">
-                </div>
-                <div class="col-6">
-            <h3 class="cart-whith">{{ productOrder.product.title }}</h3>
-            </div>
+    <img src="../pictures/blur-login2.svg" class="cart-blur-login2">
+    <div class="nav-center">
+        <img src="../pictures/nav.svg" class="nav-cart">
+    </div>
+    {% if cart|length > 0 %}
+    <div class="container-fluid">
+        <div class="container mb-5">
+            <h2 class="title-cart"> PANIER</h2>
+            <hr class="lign-color">
+            {% for productOrder in cart %}
+                <div class=" dimention-content-cart">
+                    <div class="row  ">
+                        <div class="col-3">
+                            <img src="{{ productOrder.product.picture }}" class="place-picture">
+                        </div>
+                        <div class="col-8 mt-4">
+                            <div class="row">
+                                <div class="col-1">
+                                    <img src="{{ productOrder.product.picture }}" class="place-picture-miniature">
+                                </div>
+                                <div class="col-3 ">
+                                    <h3 class="cart-product-cut">{{ productOrder.product.title }}</h3>
+                                    <p class="cart-white">{{ productOrder.product.quantity}} gr(s)</p>
+                                    <p class="label"> {{ productOrder.product.category.label }}</p> 
+                                </div>
+                                <div class="col-3">
+                                    <p class="color-font font-family-price">
+                                    €{{ productOrder.product.price }}
+                                    </p>
+                                </div>
+                                <div class="col-3 ">
+                                    <p class="color-font less-quantity">
+                                    <a href="{{  path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'less'}) }}" class="no-decoration">-</a>
+                                    {{ productOrder.quantityInCart }}
+                                    <a href="{{  path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'more'}) }}" class="no-decoration">+</a>
+                                    </p>
+                                </div>
+                                <div class="col-2">
+                                    <a href="{{  path('cart_remove_product', {'id': productOrder.product.id}) }}" class="no-decoration"><img src="../pictures/icons8-poubelle-30.png" class="size-icone-basket"></a>
+                                </div>
+                            </div>
+                            <div class="recap-shop">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <p class="price-multipl-total text-left">TOTAL</p>
+                                    </div>
+                                    <div class="col-3 text-rigth">
+                                        <p class="price-multipl-total">€{{ productOrder.product.price * productOrder.quantityInCart }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                {% endfor %}
+                {% else %}
+                <h2 class="text-danger"> Votre panier est vide</h2>
+                {% endif %}
             </div>
         </div>
     </div>
-</div>    
-    {#<tr>
-      <th scope="row">{{ productOrder.product.id }}</th>
-      <td>{{ productOrder.product.title }}</td>
-      <td>{{ productOrder.quantityInCart }}</td>
-      <td>{{ productOrder.product.price }}</td>
-      <td>{{ productOrder.product.price * productOrder.quantityInCart }}</td>
-            <td>
-            <a href="{{ path('cart_remove_product', {'id': productOrder.product.id})}}">Supprimer du panier</a>
-            <a href="{{ path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'more'}) }}">+</a>
-            <a href="{{ path('cart_addremoveone', {'id': productOrder.product.id, 'operator': 'less'}) }}">-</a></td>
-
-    </tr>#}
-    {% endfor %}
-    </tbody>
-</table>
-{% else %}
-<h2 class="text-danger"> Votre panier est vide</h2>
-{% endif %}
-</div>
 <body>
 {%  endblock %}

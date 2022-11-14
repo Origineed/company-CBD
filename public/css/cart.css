@@ -1,17 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Grandstander:wght@100&family=Gruppo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Gilda+Display&family=Grandstander:wght@100&family=Gruppo&family=Herr+Von+Muellerhoff&family=Jost:wght@100;300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gugi&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Genos:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&display=swap");
 .back {
     background-color: black;
     color: #000000;
   }
   .dimention-content-cart {
-
       overflow: hidden;
-height: 250px;
+height: 150px;
 background: linear-gradient(157.99deg, #0000006f 37.02%, #08242d 105.1%);
 }
 .place-picture{
+    width: 120%;
     margin-top: -100px;
-    margin-left: 10%;
+    margin-left: -32%;
 }
-.cart-whith{
+.cart-white{
     color: white;
 }
+.nav-cart {
+    width: 12%;
+    left: 43.5%;
+    opacity: 80%;
+  }
+  .nav-center {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .less-quantity{
+    width: 90px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 1px;
+  }
+
+  .color-font{
+  color:white;  
+  }
+
+  .no-decoration{
+    text-decoration: none;
+ color: white;
+ margin-right: 10px;
+ margin-left: 10px;
+  }
+  .no-decoration:hover {
+    color:#08242d;
+  }
+  .title-cart {
+    color: white;
+    text-align: center;
+    margin-bottom: 60px;
+    font-family: "Gruppo", cursive;
+    font-size: 37px;  
+    letter-spacing: 20px;
+}
+.lign-color{
+    color: white;
+    margin-top: -40px;
+    margin-bottom: 80px;
+}
+.font-family-price {
+    font-family: "Genos", sans-serif;
+    font-size: 27px;
+    margin-top: -9px;
+}
+.label {
+    color: white;
+ 
+}
+.place-picture-miniature {
+    width: 105%;
+}
+.cart-product-cut {
+    color: white;
+    font-size: 19px;
+}
+.cart-blur-login2 {
+    position: absolute;
+    filter: blur(120px);
+    position:fixed;
+    bottom:-200px;
+   left:150px;
+   width: 100%;
+   opacity: 30%;
+   z-index: -1;
+   opacity: 90%;
+}
+.recap-shop {
+    display: block;
+    width: 72%;
+    height: 30px;
+   background-color: white;
+   opacity: 10%;
+   border-radius: 8px;
+}
+
+.price-multipl-total {
+    font-family: "Genos", sans-serif;
+  font-size: 32px;
+  margin-top: -10px;
+}
+
+.text-left{
+    margin-left: 80px;
+}
+.text-right {
+    text-align: right;
+    margin-right: 90px;
+}
+
+

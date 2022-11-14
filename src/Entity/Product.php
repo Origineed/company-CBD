@@ -58,12 +58,12 @@ class Product
     {
         return $this->id;
     }
-    public function getCategory()
+    public function getCategory(): ?Category
     {
         return $this->category;
     }
 
-    public function setCategory($category): void
+    public function setCategory(?category $category): void
     {
         $this->category = $category;
 
